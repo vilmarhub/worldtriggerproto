@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://c1h0t4qhj5pbs"]
+
+[ext_resource type="Script" path="res://scripts/main.gd"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("res://scripts/main.gd")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1, 1)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 100
+
+[node name="UI" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_presets = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -640.0
+offset_bottom = -360.0
+
+[node name="Label" type="Label" parent="CanvasLayer/UI"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 500.0
+offset_bottom = 60.0
+text = "World Trigger Proto - Use WASD or Arrow Keys to move"
